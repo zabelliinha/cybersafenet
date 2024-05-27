@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>WORM</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>WORM</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Worm.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>
+        O worm é um tipo de malware que se deve ter maior atenção pois ele possui
+        rápida propagação e capacidade de se espalhar sem o controle da vítima. Assim que
+        infecta um computador, o programa malicioso cria cópias de si mesmo em diferentes
+        locais do sistema e se transmite para outras máquinas, seja através da Internet,
+        mensagens, conexões locais, dispositivos USB ou arquivos. Esse tipo de ataque é
+        geralmente visado por criminosos com o objetivo de roubar dados de usuários ou
+        empresas.
+    </h3>
+
+    <h2>Como funciona?</h2>
+    <h3>
+        Os worms operam de forma autônoma, não requerendo interação do usuário
+        para se ativar no PC e proliferar para outras máquinas por meio da rede. Eles
+        exploram brechas existentes nos sistemas para infectar computadores. Podem ser
+        transmitidos em segundo plano na forma de um arquivo corrompido ao acessar uma
+        página suspeita. Esse arquivo pode se passar por um instalador de programa, que,
+        ao ser executado, abre uma porta no sistema para instalar um software malicioso no
+        PC. A partir daí, o worm pode se disseminar por meio do envio de mensagens com
+        anexos ou links contaminados a todos os contatos do e-mail cadastrado no
+        computador.
+    </h3>
+
+    <h2>Possível origem</h2>
+    <h3>
+        Estima-se que o primeiro worm tenha sido desenvolvido em 1988 na
+        Universidade Cornell, nos Estados Unidos. O estudante Robert Morris distribuiu pela
+        Internet um programa capaz de se replicar sozinho, com o objetivo de descobrir
+        quantos computadores estavam conectados à rede. No entanto, o software continha
+        um bug que travou todas as máquinas em que foi instalado.
+    </h3>
+
+    <h2>Cuidado!</h2>
+    <h3>
+        Alguns tipos de worms são tão sofisticados que fecham todas as brechas de
+        segurança do sistema para impedir a infiltração de outros tipos de malwares. Isso é
+        feito para garantir exclusividade no roubo de contatos e dados. No entanto, há também
+        worms que não se limitam ao roubo de informações. Podem ser usados para atacar o
+        sistema de segurança do computador ou rede e deixar portas abertas para vírus e
+        malwares mais perigosos. Enquanto o worm não é neutralizado, continua se
+        multiplicando e pode afetar até mesmo grandes redes corporativas. Por isso, o roubo
+        de dados pessoais pode ocorrer também por meio de ataques aos sites que
+        armazenam informações sigilosas dos usuários.
+    </h3>
+
+    <!-- QUIZ -->
+    <h2>Quiz de Perguntas</h2>
+
+    <div class="quizz">
+        <main>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers"></div>
+            </div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scriptWormQuiz.js" type="module"></script>
+
+    <h2>Quer saber mais? Acesse outros materiais nossos!</h2>
+
+    <article class="fila"> <!-- fileira 1 -->
+        <ul>
+            <li><a href="casoWormStuxnet.html"><img src="Imagens/Estudos de caso/Caso de Worm - Stuxnet, 2010.png"
+                        alt="Caso de Worm - Stuxnet, 2010"></a>
+                <div class="caixaCinza">
+                    <h2>Caso de Worm - Stuxnet, 2010</h2>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+    body {
+        background-color: #252629;
+        height: 100%;
+        font-family: "Inika", serif;
+    }
+
+    /* BARRA FIXA */
+
+    header {
+        background-color: #252629;
+        color: #fff;
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        /* Alinha os itens no centro horizontalmente */
+        align-items: center;
+        /* Alinha os itens no centro verticalmente */
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+    .navegaçao_logo img {
+        width: 130px;
+        height: auto; /* Mantém a proporção original */
+        margin-left: -15%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        margin-right: auto;
+        /* Define margem à direita para afastar o menu para a esquerda */
+    }
+
+    .navegaçao {
+        /* Ajuste para mover o menu para a esquerda */
+        margin-right: auto;
+        /* Define margem à direita para afastar o menu para a esquerda */
+    }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #252629;
+        padding: 20px;
+        border: 2px solid #251657;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px #251657;
+        z-index: 9999;
+        width: 300px;
+        /* Defina a largura desejada */
+        height: 100%;
+        /* Defina a altura desejada */
+        line-height: 42px;
+    }
+
+    .popup a {
+        /* Referente ao texto do menu */
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .popup-content {
+        text-align: center;
+    }
+
+    p:hover {
+            color:#D99EFB; /* Cor quando o mouse passa por cima */
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: #ffffff;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1) {
+        top: 0;
+    }
+
+    label span:nth-child(2) {
+        top: 8px;
+    }
+
+    label span:nth-child(3) {
+        top: 16px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+
+    /* CONTEÚDO */
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 3%;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fila ul {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .fila h2 {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        background: #4D4D4D;
+        width: 300px;
+        height: 55px;
+        margin-top: -1.5%;
+        color: #fff;
+        line-height: 50px;
+    }
+
+    .fila img {
+        width: 300px;
+        height: 158px;
+    }
+
+    /* RODAPÉ */
+
+    footer {
+        background-color: #252629;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        align-items: center;
+        width: 100%;
+        font-weight: 400;
+    }
+
+    .footer-icon {
+        gap: 5px;
+        flex-direction: column;
+        display: flex;
+        justify-content: left;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .footer-left img {
+        width: 30px;
+        /* ajuste o tamanho conforme necessário */
+        margin-right: 10px;
+    }
+
+    .footer-right {
+        padding-top: 10px;
+
+    }
+
+    /* Media query para dispositivos com largura máxima de 768 pixels (geralmente dispositivos móveis) */
+    @media only screen and (max-width: 768px) {
+
+        /* Estilos específicos para dispositivos móveis */
+        .fila {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Outros estilos móveis aqui */
+    }

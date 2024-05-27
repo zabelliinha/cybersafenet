@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>Força Bruta</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    < <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>FORÇA BRUTA</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Força Bruta.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>
+        A força bruta é uma técnica usada por hackers para descobrir senhas ou
+        chaves criptográficas através da tentativa sistemática de todas as combinações
+        possíveis. Em outras palavras, é como um ataque de "tentativa e erro" automatizado,
+        onde o hacker testa repetidamente diferentes combinações de caracteres até
+        encontrar a senha correta.
+    </h3>
+
+    <h2>Exemplo</h2>
+    <h3>
+        Um hacker deseja acessar uma conta protegida por senha. Ele usaria um programa
+        automatizado para tentar todas as combinações possíveis de letras, números e
+        símbolos até encontrar a senha correta. Esse processo pode ser demorado, mas é
+        eficaz se a senha for relativamente simples ou curta.
+    </h3>
+
+    <h2>Consequências</h2>
+    <h3>
+        A força bruta é perigosa porque pode ser usada para comprometer a
+        segurança de sistemas e contas online. Senhas fracas ou previsíveis são
+        especialmente vulneráveis a ataques de força bruta, pois podem ser descobertas mais
+        rapidamente. Uma vez que um hacker obtenha acesso a uma conta, eles podem
+        causar danos, roubar informações ou realizar outras atividades maliciosas.
+    </h3>
+
+    <h2>Como se proteger?</h2>
+    <h3>
+        Para se proteger aos ataques de força bruta, é importante criar senhas fortes e exclusivas,
+        que sejam difíceis de adivinhar. Isso inclui o uso de uma combinação de letras
+        maiúsculas e minúsculas, números e caracteres especiais. Além disso, é
+        recomendável implementar medidas de segurança adicionais, como autenticação de
+        dois fatores, que tornam mais difícil para os hackers acessarem contas mesmo se
+        descobrirem a senha.
+    </h3>
+
+    <!-- QUIZ -->
+    <h2>Quiz de Perguntas</h2>
+
+    <div class="quizz">
+        <main>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers"></div>
+            </div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scriptForcaBrutaQuiz.js" type="module"></script>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

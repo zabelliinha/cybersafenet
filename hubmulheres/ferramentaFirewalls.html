@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>FIREWALLS</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>FIREWALLS</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Firewalls.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>
+        Um firewall é um dispositivo de segurança de rede que monitora e controla o tráfego
+        de rede com base em regras de segurança predefinidas. Ele atua como uma barreira
+        entre uma rede interna segura e redes externas não confiáveis, como a Internet.
+    </h3>
+
+    <h2>Tipos de Firewalls</h2>
+    <h3>
+    - Firewalls de Packet Filtering: Examinam pacotes individuais de dados que entram e
+    saem da rede, com base em regras como endereços IP, portas e protocolos. Exemplos
+    incluem firewalls baseados em hardware e software.
+    <br><br>- Firewalls de Estado (Stateful Firewalls): Mantêm um registro do estado das
+    conexões de rede e permitem ou bloqueiam o tráfego com base nesse estado. Eles oferecem
+    uma camada adicional de segurança em comparação com os firewalls de filtragem de pacotes.
+    <br><br>- Firewalls de Próxima Geração (NGFW): Integram recursos avançados, como detecção
+    de intrusões, prevenção de intrusões, filtragem de conteúdo e análise de aplicativos, para
+    oferecer uma proteção mais abrangente.
+    <br><br>- Firewalls de Aplicativos Web (WAF): Especializados em proteger aplicativos web
+    contra ataques comuns, como injeção de SQL, cross-site scripting (XSS) e ataques de negação
+    de serviço (DDoS).
+    </h3>
+
+    <h2>Funcionamento</h2>
+    <h3>
+        Os firewalls analisam o tráfego de rede com base nas regras definidas pelo
+        administrador de segurança. Eles podem bloquear ou permitir o tráfego com base
+        em critérios como endereço IP de origem/destino, portas TCP/UDP e tipo de protocolo.
+    </h3>
+
+    <h2>Implementações</h2>
+    <h3>
+    - Firewalls de Hardware: Dispositivos físicos dedicados à função de firewall,
+    geralmente instalados entre a rede interna e a conexão com a Internet.
+    <br><br>- Firewalls de Software: Aplicações instaladas em servidores ou
+    dispositivos de rede para fornecer funcionalidades de firewall.
+    </h3>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

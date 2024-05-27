@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ataques de Negação de Serviço</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Programas Maliciosos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>ATAQUES DE NEGAÇÃO DE SERVIÇO</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Ataques de Negação de Serviço.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>
+        Os ataques de negação de serviço (DoS) são uma forma de ciberataque
+        projetada para tornar os serviços online inacessíveis aos usuários legítimos,
+        sobrecarregando os recursos do sistema alvo com uma quantidade excessiva de
+        tráfego, solicitações ou outra carga. Isso pode resultar na interrupção dos serviços,
+        incapacitando a capacidade do sistema alvo de responder a solicitações legítimas. Os
+        ataques de negação de serviço podem ser perpetrados de várias maneiras, incluindo
+        o envio de um grande volume de tráfego para um servidor, explorando
+        vulnerabilidades em sistemas de rede ou inundando um sistema com solicitações de
+        conexão.
+    </h3>
+
+    <h2>Tipos de ataques de negação de serviço</h2>
+    <h3>
+        - Ataques de Sobrecarga de Banda Larga (Bandwidth Floods): Esses ataques
+        visam consumir toda a largura de banda disponível, inundando o alvo com
+        uma quantidade excessiva de tráfego de rede.
+        <br><br>- Ataques de Sobrecarga de Recursos (Resource Exhaustion Attacks): Esses
+        ataques visam esgotar os recursos disponíveis no sistema alvo, como CPU,
+        memória ou armazenamento, impedindo assim que ele atenda às solicitações
+        legítimas.
+        <br><br>- Ataques de Protocolo (Protocol Attacks): Esses ataques exploram falhas em
+        protocolos de rede para sobrecarregar o sistema alvo. Um exemplo é o ataque
+        SYN Flood, no qual o atacante envia uma grande quantidade de solicitações
+        de conexão TCP, consumindo os recursos do sistema alvo.
+        <br><br>- Ataques de Aplicação (Application Layer Attacks): Esses ataques visam
+        sobrecarregar aplicativos ou serviços específicos em um servidor. Eles
+        geralmente exploram vulnerabilidades na camada de aplicação do sistema,
+        como ataques de injeção SQL ou ataques de solicitação HTTP excessiva.
+    </h3>
+
+    <h2>Algumas das estratégias
+        comuns</h2>
+    <h3>
+        - Filtragem de Tráfego: Implementar firewalls e sistemas de filtragem de
+        tráfego para bloquear o tráfego malicioso antes que ele atinja o alvo.
+        <br><br>- Aumento de Capacidade: Aumentar a capacidade de rede, hardware e
+        largura de banda para lidar com grandes volumes de tráfego.
+        <br><br>- Mitigação de Ataques: Utilizar sistemas de mitigação de DDoS que
+        identificam e filtram o tráfego malicioso em tempo real, protegendo assim os
+        recursos do sistema.
+        <br><br>- Diversificação de Servidores: Distribuir os serviços em vários servidores ou
+        data centers geograficamente dispersos para mitigar os impactos de um
+        ataque.
+        <br><br>- Atualizações de Segurança: Manter sistemas e aplicativos atualizados com
+        patches de segurança para corrigir vulnerabilidades conhecidas que poderiam
+        ser exploradas em um ataque.
+    </h3>
+
+    <!-- QUIZ -->
+    <h2>Quiz de Perguntas</h2>
+
+    <div class="quizz">
+        <main>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers"></div>
+            </div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scriptAtaquesDeNegacaoDeServicoQuiz.js" type="module"></script>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

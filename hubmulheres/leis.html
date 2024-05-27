@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldeCatalogo.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+
+    <h1>LEIS</h1> <!-- título -->
+
+    <article class="fila"> <!-- fileira 1 -->
+        <ul>
+            <li><a href="leiLGPD.html"><img src="Imagens/Leis/LGPD.png" alt="LGPD"></a>
+                <div class="caixaCinza">
+                    <h2>LGPD</h2>
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><a href="leiISOIEC27002.html"><img src="Imagens/Leis/ISOIEC 27002.png" alt="ISO/IEC 27002"></a>
+                <div class="caixaCinza">
+                    <h2>ISO/IEC 27002</h2>
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><a href="leiISO27001.html"><img src="Imagens/Leis/ISO 27001.png" alt="ISO 27001"></a>
+                <div class="caixaCinza">
+                    <h2>ISO 27001</h2>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <article class="fila"> <!-- fileira 2 -->
+        <ul>
+            <li><a href="lei127372021.html"><img src="Imagens/Leis/Lei 12.7372012.png" alt="Lei 12.737/2012"></a>
+                <div class="caixaCinza">
+                    <h2>Lei 12.737/2012</h2>
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><a href="lei12965.html"><img src="Imagens/Leis/Lei 12.965.png" alt="Lei 12.965"></a>
+                <div class="caixaCinza">
+                    <h2>Lei 12.965</h2>
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><a href="leiCodigoPenal154-A.html"><img src="Imagens/Leis/Código Penal, em seu artigo 154-A.png"
+                        alt="Código Penal, em seu artigo 154-A"></a>
+                <div class="caixaCinza">
+                    <h2>Código Penal, em seu artigo 154-A</h2>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

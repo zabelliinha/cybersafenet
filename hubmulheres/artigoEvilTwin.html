@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>Evil Twin</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>EVIL TWIN</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Evil Twin.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>O ataque Evil Twin ocorre quando um hacker tenta enganar os usuários, fazendo-os se conectarem a um ponto de
+        acesso Wi-Fi falso que simula uma rede legítima. Quando a vítima se conecta a essa rede "evil twin", os dados
+        que ela compartilha são encaminhados para um servidor controlado pelo invasor.
+    </h3>
+
+    <h2>Como ocorre?</h2>
+    <h3>
+        Um ataque evil twin ocorre quando um invasor configura um ponto de acesso
+        Wi-Fi falso na esperança de que os usuários se conectem a ele em vez de um legítimo,
+        quando isso ocorre os usuários que se conectam a esse ponto de acesso, podem ter
+        todos os seus dados compartilhados com a rede por um servidor controlado pelo
+        invasor. Um invasor pode criar um evil twin com um smartphone ou outro dispositivo
+        compatível com a Internet e algum software disponível. Esse ataque costuma ser mais
+        comum em redes Wi-Fi públicas.
+    </h3>
+
+    <h2>Consequências</h2>
+    <h3>
+        Ataques evil twin são perigosos, pois, quando bem-sucedidos, permitem que
+        hackers acessem seu dispositivo. Isso significa que eles podem roubar credenciais de
+        login e outras informações privadas, incluindo dados financeiros (isso se o usuário
+        realizar transações financeiras quando estiver conectado ao Wi-Fi evil twin).
+        Além disso, os hackers também poderiam inserir malware em seu dispositivo. Geralmente
+        não deixando sinais reveladores que possam expor sua verdadeira natureza. Os
+        usuários só conseguirão perceber que foram vítimas de um ataque evil twin, quando
+        identificarem ações não autorizadas realizadas em seu nome.
+    </h3>
+
+    <h2>Exemplo</h2>
+    <h3>
+        Um bom exemplo disso é quando uma pessoa decide visitar o café local. Uma
+        vez sentada com o café, ela se conecta à rede Wi-Fi pública. Ela já se conectou a este
+        ponto de acesso antes sem problemas, portanto não há motivos para suspeitar. No
+        entanto, nessa ocasião, um hacker criou uma rede evil twin com um nome SSID
+        idêntico. Por estar sentada perto do alvo insuspeito, a rede falsa tem um sinal mais
+        forte do que a rede real do café. Como resultado, o alvo se conecta a ela mesmo que
+        esteja listada como "Insegura". Uma vez online, o alvo faz login em sua conta bancária
+        para transferir algum dinheiro para um amigo. Como ela não está usando uma VPN, a
+        qual criptografaria seus dados, a rede evil twin permite que os hackers acessem suas
+        informações bancárias. A vítima só fica sabendo disso mais tarde, quando percebe
+        que transações não autorizadas ocorreram em sua conta, causando prejuízos
+        financeiros.
+    </h3>
+
+    <!-- QUIZ -->
+    <h2>Quiz de Perguntas</h2>
+
+    <div class="quizz">
+        <main>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers"></div>
+            </div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scriptEvilTwinQuiz.js" type="module"></script>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

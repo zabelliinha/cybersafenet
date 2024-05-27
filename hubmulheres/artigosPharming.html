@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moldePesquisas.css">
+    <link href=" https://fonts.cdnfonts.com/css/montserrat " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pharming</title>
+</head>
+
+
+<body>
+
+    <!-- BARRA FIXA -->
+
+    <header>
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="navegaçao">
+            <div class="navegaçao_logo">
+                <a href="index.html"><img src="Imagens/barra fixa/logo.png" alt="Logo" /></a>
+            </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a href="ataquesCiberneticos.html">
+                    <p>Artigos sobre Ataques Cibernéticos</p>
+                </a>
+                <a href="ferramentas.html">
+                    <p>Ferramentas</p>
+                </a>
+                <a href="leis.html">
+                    <p>Leis</p>
+                </a>
+                <a href="estudosDeCaso.html">
+                    <p>Estudos de caso</p>
+                </a>
+                <a href="artigoPilaresDaSegurança.html">
+                    <p>Pilares da Segurança</p>
+                </a>
+                <a href="artigoBoasPraticas.html">
+                    <p>Boas práticas</p>
+                </a>
+                <a href="AtaquesJogos.html">
+                    <p>Ataques em Jogos</p>
+                </a>
+                <a href="sobreNos.html">
+                    <p>Sobre Nós</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <h1>PHARMING</h1> <!-- título -->
+
+    <div class="banner">
+        <img src="Imagens/Pesquisas/Pharming.png" alt="Banner">
+    </div>
+
+    <h2>O que é?</h2>
+    <h3>
+        Pharming é um tipo de ciberataque que combina as palavras “phishing” e
+        “farming”. Nesse golpe online, o tráfego de um site é manipulado, e informações
+        confidenciais são roubadas, este golpe online criado por cibercriminosos que visa
+        redirecionar os usuários de um site específico para uma página falsa. Esses sites
+        procuram roubar informações pessoais e credenciais de login, como senhas, números
+        de cartão de crédito e contas bancárias, por exemplo.
+    </h3>
+
+    <h2>Existem duas principais maneiras pelas quais o pharming é
+        executado</h2>
+    <h3>
+        - Baseado em Malware: Um código malicioso é instalado no computador do
+        usuário, alterando o arquivo de hosts. Mesmo se o usuário digitar o endereço
+        correto, o arquivo de hosts corrompido o levará a um site fraudulento.
+        <br><br>- Envenenamento de DNS: Os pharmers modificam a tabela de DNS em um
+        servidor, fazendo com que vários usuários visitem sites falsos em vez dos
+        legítimos. Isso pode afetar muitas vítimas, mesmo que seus computadores
+        estejam livres de malwares.
+    </h3>
+
+    <h2>Como se proteger contra esse ataque?</h2>
+    <h3>
+        Para se proteger desses ataques é recomendável escolher um provedor de
+        serviços de Internet (ISP) de confiança. Opte por um provedor de serviços de Internet
+        respeitável e confiável, pois isso ajuda a garantir que seu tráfego online não seja
+        redirecionado para sites falsos.
+        Ademais, é necessário manter seu software Antivírus atualizado. Certifique-
+        se de que seu antivírus esteja atualizado e realize verificações regulares em seu
+        computador. Isso ajuda a detectar e remover malwares que podem estar relacionados
+        ao pharming. Além disso, adote medidas de segurança no sistema DNS: a adoção de medidas como
+        DNSSEC, certificados SSL/TLS e restrições de acesso pode ajudar a proteger contra
+        ataques de pharming e aumentar a segurança do sistema DNS. Siga as boas práticas de segurança.
+    </h3>
+
+    <!-- QUIZ -->
+    <h2>Quiz de Perguntas</h2>
+
+    <div class="quizz">
+        <main>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers"></div>
+            </div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scriptPharmingQuiz.js" type="module"></script>
+
+    <h2>Quer saber mais? Acesse outros materiais nossos!</h2>
+
+    <article class="fila"> <!-- fileira 1 -->
+        <ul>
+            <li><a href="casoPharmingGlobal.html"><img src="Imagens/Estudos de caso/Caso de Pharming Global, 2007.png"
+                        alt="Caso de Pharming Global, 2007"></a>
+                <div class="caixaCinza">
+                    <h2>Caso de Pharming Global, 2007</h2>
+                </div>
+            </li>
+        </ul>
+
+        <ul>
+            <li><a href="casoPharmingBrasil.html"><img src="Imagens/Estudos de caso/Caso de Pharming no Brasil, 2015.png"
+                        alt="Caso de Pharming no Brasil, 2015"></a>
+                <div class="caixaCinza">
+                    <h2>Caso de Pharming no Brasil, 2015</h2>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-icon">
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone email.png" alt="Ícone de E-mail">
+                <span>seuemail@example.com</span>
+            </div>
+
+            <div class="footer-left">
+                <img src="Imagens/rodape/icone instagram.png" alt="Ícone do Instagram">
+                <span>@seuinstagram</span>
+            </div>
+        </div>
+
+
+        <div class="footer-text">
+            <div class="footer-right">
+                <a href="./sobreNos.html">
+                    <span>Sobre Nós</span>
+                </a>
+                <div class="footer-right">
+                    <a href="#">
+                        <span>Mapa do Site</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
