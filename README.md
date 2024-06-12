@@ -1,1 +1,1 @@
-![cybersafenet](https://github.com/zabelliinha/cyberdafenet/blob/main/apresentacao.png)
+![cybersafenet](https://github.com/zabelliinha/cybersafenet/blob/main/apresentacao.png)
